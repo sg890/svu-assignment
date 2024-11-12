@@ -1,0 +1,326 @@
+:root {
+  --uranian-blue: #c6ddf5;
+  --uranian-blue-light: #ddebf9;
+  --uranian-blue-font: #f4f8fd;
+  --outer-space: #36494eff;
+  --black: #000000;
+  --paynes-gray: rgb(12, 107, 179);
+  --orange: #ffa500;
+  --orange-red: #ff4500;
+  --purple:rgba(234, 0, 255, 0.994);
+  --yellow: rgba(255, 255, 0);
+  --c1: hsl(165, 100%, 50%);
+}
+
+body {
+  margin: 0px;
+  background-color: var(--uranian-blue-light);
+}
+
+/* Link styles */
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--yellow);
+}
+
+/* Class Styles */
+
+.active {
+  color: var(--c1);
+}
+
+.block {
+  height: 600px;
+}
+
+.logo{
+  background: linear-gradient(to right, orange, yellow, purple, skyblue, darksalmon, seagreen);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+/* Header and Footer */
+header .logo1 img{
+  align-items: center;
+}
+
+header {
+  background-color: rgb(70, 16, 73);
+  background-position: center;
+  background-attachment: fixed;
+  color: var(--uranian-blue);
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+header nav ul li {
+  list-style-type: none;
+  display: inline;
+  text-align: center;
+  margin-right: 20px;
+}
+
+header .logo img {
+  height: auto;
+  width: 250%;
+  max-width: 100px;
+  align-self: flex-start;
+}
+
+header a {
+  color: var(rgb(255, 255, 255));
+}
+
+footer {
+  font-size: 1.2rem;
+  padding: 20px;
+  background-color: var(--paynes-gray);
+  color: var(--orange-red);
+}
+
+footer :hover{
+background-color: chartreuse;
+
+}
+
+/* Home Page Styles */
+
+.home {
+  background-color: antiquewhite;
+  color: var(--black);
+  font-size: 1.25rem;
+}
+
+.home h2 mark{
+  color:darksalmon;
+  font-style: italic;
+}
+
+
+.home img {
+  width: 100%;
+  height: auto;
+}
+
+.home section .hero-section video .banner-video{
+width: 60%;
+height: auto;
+display: block;
+margin: auto;
+object-fit: contain;
+overflow-clip-margin: content-box;
+overflow: clip;
+}
+
+.icon-bar {
+  background-color:rgb(253, 253, 253,1);
+  top: 49%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  padding: 5px 10px 12px;
+  transition: .3s;
+  color: #fff;
+  border-radius: 5px;
+  margin-top: 2px;
+}
+.facebook{
+background: blue;
+}
+
+.twitter{
+  background: greenyellow;
+}
+
+.google{
+background: #ffa500;
+}
+
+#overlay, .go-top, .icon-bar {
+  position: fixed;
+  color: #f7f702;
+}
+/* Academics Styles */
+
+.academics-content {
+background-color: lemonchiffon;
+}
+
+.academics-content {
+  padding-top: 3rem;
+  padding-left: 2rem;
+  font-size: 1.2rem;
+}
+
+.academics-content ol li {
+  font-weight:bold;
+  margin-bottom: 20px;
+}
+
+.academics-content ol li ul li {
+  font-weight: normal;
+  margin-bottom: 1;
+}
+
+/* Admission Form Styles */
+
+.admission {
+  background-color: lemonchiffon;
+  margin: 40px 20%;
+  display: grid;
+  align-items: center;
+  border-radius: 15px;
+}
+.admission header span img{
+  align-self: initial;
+}
+.admission form {
+  border: var(--outer-space) 2px solid;
+  border-bottom: var(--outer-space) 4px solid;
+  border-right: var(--outer-space) 4px solid;
+  border-radius: 15px;
+  padding: 20px;
+  color: #000000;
+}
+
+.admission h2 {
+  font-size: 2rem;
+  text-align: center;
+  color: #96390bf1;
+}
+
+.admission form div {
+  margin-bottom: 15px;
+}
+
+.admission form div label {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.admission form div input {
+  width: 100%;
+  font-size: 1.5rem;
+  border: 10;
+  border-bottom: var(--black) 1px solid;
+  background-color: transparent;
+}
+
+.admission form div .gender {
+  width: 100%;
+  line-gap-override: 1px;
+}
+.admission form input:focus,
+.admission form input:focus-visible {
+  outline: none;
+  border: var(--black) 1px solid;
+  border-top: none;
+}
+
+.admission form button {
+  font-size: 1.5rem;
+  color: var(--black);
+  background-color: gold;
+  border: none;
+  border-bottom: var(--black) 1px solid;
+  border-right: var(--black) 1px solid;
+  border-radius: 15px;
+  padding: 10px 20px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.button{
+    background: linear-gradient(to right, skyblue, yellow, red, purple , seagreen);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.admission .button:hover {
+  background-color: var(--c1);
+}
+
+/* Gallery Styles */
+
+.gallery {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  overflow: hidden;
+  background-color: lemonchiffon;
+}
+
+.gallery :nth-child(1),
+.gallery :nth-child(2),
+.gallery :nth-child(4),
+.gallery :nth-child(5) {
+  width: 49%;
+}
+
+.gallery :nth-child(3),
+.gallery :nth-child(9),
+.gallery :nth-child(6) {
+  width: 100%;
+}
+
+.gallery :nth-child(7),
+.gallery :nth-child(10),
+.gallery :nth-child(11),
+.gallery :nth-child(8) {
+  width: 49%;
+}
+
+/* Contact Us Form */
+
+.contact {
+  margin: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 20px;
+  border-radius: 15px;
+  font-size: large;
+}
+
+.contact div {
+  width: 30%;
+  padding: 20px;
+  background-color: lemonchiffon;
+  text-align: center;
+  border: 1px solid #00000079;
+  border-radius: 20px;
+  word-wrap: break-word;
+}
+
+.contact div svg {
+  height: 4.5rem;
+}
+
+.contact div a {
+  color: var(--black);
+}
+.icon-bar {
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
